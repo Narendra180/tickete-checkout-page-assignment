@@ -1,6 +1,9 @@
 :root {
   --text-grey-primary: #1C2024;
   --text-grey-secondary: #60646C;
+  --text-grey-tertiary: #7D828A;
+  --text-grey-footer-links: #ADB1B8;
+  --grey-divider: #3C3F44;
 }
 
 * {
