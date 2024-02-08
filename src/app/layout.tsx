@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import { openSansFont } from "@/fonts";
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import "./globals.css";
+import '@mantine/core/styles.css';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Checkout | Tickete",
@@ -14,10 +18,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <ColorSchemeScript />
+      </head>
       <body 
         className={openSansFont.className}
       >
-        {children}
+        <MantineProvider>
+          <Header />
+          {children}
+        </MantineProvider>
+        <Footer />
       </body>
     </html>
   );
