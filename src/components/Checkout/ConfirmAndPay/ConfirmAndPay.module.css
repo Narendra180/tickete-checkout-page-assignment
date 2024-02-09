@@ -1,6 +1,8 @@
 .confirm-and-pay-div {
   padding: 0 8%;
   margin-bottom: 3rem;
+  display: flex;
+  gap: 1.25rem;
 }
 
 .confirm-and-pay-h1 {
@@ -9,4 +11,9 @@
   letter-spacing: 1px;
   font-weight: 600;
   margin-bottom: 3rem;
+}
+
+.payment-form-container {
+  flex: 0.7 1 0;
+  min-width: 320px;
 }

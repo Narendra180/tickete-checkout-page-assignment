@@ -1,3 +1,6 @@
+"use client"
+
+import BookingInfo from "../BookingInfo";
 import FreeCancellationBanner from "../FreeCancellationBanner";
 import PaymentForm from "../PaymentForm";
 import PaymentMethodsComingSoon from "../PaymentMethodsComingSoon";
@@ -9,15 +12,15 @@ function ConfirmAndPay() {
     <div
       className={styles["confirm-and-pay-div"]}
     > 
-      <h1 className={styles["confirm-and-pay-h1"]}>Confirm & pay</h1>
-      <div
-        className={styles["payment-form-and-selected-product-info-divs-container"]}
-      >
+      <div className={styles["payment-form-container"]}>
+        <h1 className={styles["confirm-and-pay-h1"]}>Confirm & pay</h1>
         <FreeCancellationBanner />
         <PaymentForm />
         <PaymentMethodsComingSoon />
         <TotalPayable />
       </div>
+      
+      <BookingInfo />
     </div>
   )
 }

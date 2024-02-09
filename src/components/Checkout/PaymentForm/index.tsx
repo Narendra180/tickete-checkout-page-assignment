@@ -1,5 +1,3 @@
-"use client"
-
 import { useForm } from "@mantine/form";
 import styles from "./PaymentForm.module.css";
 import EnterYourDetails from "./EnterYourDetails";
