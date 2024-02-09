@@ -33,7 +33,10 @@ function Footer() {
           {
             footerLinks.map(({ id, path, label }) => {
               return (
-                <div className={styles["link-item"]}>
+                <div 
+                  key={id}
+                  className={styles["link-item"]}
+                >
                   <div className={styles["dot-div"]}></div>
                   <Link
                     href={path}
