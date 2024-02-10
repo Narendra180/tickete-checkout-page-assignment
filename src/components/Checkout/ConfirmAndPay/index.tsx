@@ -1,5 +1,3 @@
-"use client"
-
 import BookingInfo from "../BookingInfo";
 import FreeCancellationBanner from "../FreeCancellationBanner";
 import PaymentForm from "../PaymentForm";
@@ -7,6 +5,7 @@ import TotalPayable from "../TotalPayable";
 import styles from "./ConfirmAndPay.module.css";
 
 function ConfirmAndPay() {
+
   return (
     <div
       className={styles["confirm-and-pay-div"]}
@@ -19,6 +18,8 @@ function ConfirmAndPay() {
       </div>
       
       <BookingInfo />
+
+      <div className={styles["divider"]}></div>
     </div>
   )
 }

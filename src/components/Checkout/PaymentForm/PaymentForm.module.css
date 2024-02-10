@@ -30,6 +30,10 @@
   flex: 1 1 0;
 }
 
+.payment-form-div.fullwidth-inputs .two-inputs-in-single-line-div {
+  flex-direction: column;
+}
+
 .form-elements-container :global(.mantine-Input-input) {
   border-radius: 0.625rem;
   padding: 0.3125rem 1rem;

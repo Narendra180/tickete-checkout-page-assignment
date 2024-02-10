@@ -1,8 +1,10 @@
 .confirm-and-pay-div {
+  position: relative;
   padding: 0 8%;
   margin-bottom: 3rem;
   display: flex;
   gap: 1.5rem;
+  padding-bottom: 1.75rem;
 }
 
 .confirm-and-pay-h1 {
@@ -16,6 +18,15 @@
 .payment-form-container {
   flex: 0.7 1 0;
   min-width: 320px;
+}
+
+.divider {
+  padding: 0 8%;
+  position: absolute;
+  left: 8%;
+  bottom: 0;
+  width: calc(100% - 16%);
+  border-bottom: 1px solid var(--mantine-color-gray-4);
 }
 
 /* Media Queries */

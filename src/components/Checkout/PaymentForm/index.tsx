@@ -4,6 +4,7 @@ import EnterYourDetails from "./EnterYourDetails";
 import AdditionalInfo from "./AdditionalInfo";
 import ModeOfPayment from "./ModeOfPayment";
 import { useCallback } from "react";
+import { useResizeObserver } from "@mantine/hooks";
 
 function PaymentForm() {
   const form = useForm({
@@ -23,13 +24,18 @@ function PaymentForm() {
     }
   });
 
+  const [ref, rect] = useResizeObserver();
+
   const handleSubmit = useCallback((values: any) => {
     console.log(values);
   }, [form])
 
   return (
     <div 
-      className={styles["payment-form-div"]}
+      className={`${styles["payment-form-div"]} ${
+        (rect?.width) <= 500? `${styles["fullwidth-inputs"]}`: ""}`
+      }
+      ref={ref}
     >
       <form
         className={styles["payment-form"]}

@@ -1,5 +1,8 @@
-import styles from "./Checkout.module.css";
+"use client"
+
 import ConfirmAndPay from "./ConfirmAndPay";
+import FAQ from "./FAQ";
+import styles from "./Checkout.module.css";
 
 function Checkout() {
   return (
@@ -10,6 +13,8 @@ function Checkout() {
         Holding your tickets for 30:00
       </p>
       <ConfirmAndPay />
+
+      <FAQ />
     </div>
   )
 }
