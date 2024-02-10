@@ -11,6 +11,11 @@
   margin: 0;
 }
 
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-grey-primary);
 }

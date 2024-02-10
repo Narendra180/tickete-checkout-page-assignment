@@ -1,0 +1,57 @@
+.payment-form > div {
+  padding: 1.75rem 0;
+  padding-top: 0;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--mantine-color-gray-4);
+}
+
+.header {
+  margin-bottom: 1.75rem;
+}
+
+.header > h2 {
+  font-weight: 600;
+  margin-bottom: 0.3125rem;
+}
+
+.form-elements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.two-inputs-in-single-line-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.two-inputs-in-single-line-div > div {
+  flex: 1 1 0;
+}
+
+.form-elements-container :global(.mantine-Input-input) {
+  border-radius: 0.625rem;
+  padding: 0.3125rem 1rem;
+  height: auto;
+}
+
+.form-elements-container :global(.mantine-Select-wrapper[data-with-left-section="true"] .mantine-Select-input)  {
+  padding-left: 2rem;
+}
+
+.form-elements-container :global(.mantine-Select-wrapper[data-with-right-section="true"] .mantine-Select-input)  {
+  padding-right: 2rem;
+}
+
+.form-elements-container :global(.mantine-MultiSelect-input) {
+  padding: 0.675rem 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .payment-form { 
+    padding-top: 2rem;
+    border-top: 1px solid var(--mantine-color-gray-4);
+  }
+}

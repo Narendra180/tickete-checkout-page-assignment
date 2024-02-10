@@ -3,6 +3,7 @@ import { DateInput } from "@mantine/dates";
 import { PiInfo, PiPiggyBankFill, PiLockFill } from "react-icons/pi"
 import styles from "./PaymentForm.module.css";
 import Link from "next/link";
+import PaymentMethodsComingSoon from "../PaymentMethodsComingSoon";
 
 type ModeOfPaymentProps = {
   mantineFormObj: any
@@ -20,7 +21,7 @@ function ModeOfPayment({ mantineFormObj }: ModeOfPaymentProps) {
         <div className={styles["card-type-icons-container"]}>
 
         </div>
-        <div className={styles["form-inputs-container"]}>
+        <div className={styles["form-elements-container"]}>
           <div className={styles["two-inputs-in-single-line-div"]}>
             <TextInput
               placeholder="Name on Card *"
@@ -78,6 +79,8 @@ function ModeOfPayment({ mantineFormObj }: ModeOfPaymentProps) {
           Confirm and Pay
         </Button>
       </div>
+
+      <PaymentMethodsComingSoon />
     </div>
   )
 }

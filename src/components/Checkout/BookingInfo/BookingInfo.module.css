@@ -1,11 +1,18 @@
+.booking-info-wrapper {
+  flex: 0.3 1 0;
+  min-width: 320px;
+}
+
 .booking-info-container {
   position: relative;
-  flex: 0.3 1 0;
   align-self: flex-start;
-  min-width: 320px;
   border: 1px solid var(--mantine-color-gray-4);
   border-radius: 1rem;
   padding: 1rem;
+}
+
+.confirm-and-pay-h1 {
+  composes: confirm-and-pay-h1 from "../ConfirmAndPay/ConfirmAndPay.module.css";
 }
 
 .image-carousel-container {
@@ -177,4 +184,30 @@
   font-size: 1rem;
   font-weight: 400;
   border-radius: 1rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .booking-info-wrapper {
+    min-width: 280px;
+  }
+  .booking-info-container {
+    padding-bottom: 0;
+  }
+  .confirm-and-pay-div { 
+    flex-direction: column;
+  }
+  .confirm-and-pay-h1 {
+    display: block;
+  }
+  .license-link-and-submit-btn-container {
+    display: none;
+  }
+}
+
+/* Media Queries */
+@media screen and (min-width: 769px) {
+  .confirm-and-pay-h1 {
+    display: none;
+  }
 }

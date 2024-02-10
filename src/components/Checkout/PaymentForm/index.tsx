@@ -32,6 +32,7 @@ function PaymentForm() {
       className={styles["payment-form-div"]}
     >
       <form
+        className={styles["payment-form"]}
         onSubmit={form.onSubmit(handleSubmit)}
       >
         <EnterYourDetails 

@@ -3,7 +3,6 @@
 import BookingInfo from "../BookingInfo";
 import FreeCancellationBanner from "../FreeCancellationBanner";
 import PaymentForm from "../PaymentForm";
-import PaymentMethodsComingSoon from "../PaymentMethodsComingSoon";
 import TotalPayable from "../TotalPayable";
 import styles from "./ConfirmAndPay.module.css";
 
@@ -16,7 +15,6 @@ function ConfirmAndPay() {
         <h1 className={styles["confirm-and-pay-h1"]}>Confirm & pay</h1>
         <FreeCancellationBanner />
         <PaymentForm />
-        <PaymentMethodsComingSoon />
         <TotalPayable />
       </div>
       

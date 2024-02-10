@@ -2,7 +2,7 @@
   padding: 0 8%;
   margin-bottom: 3rem;
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .confirm-and-pay-h1 {
@@ -10,10 +10,24 @@
   font-kerning: normal;
   letter-spacing: 1px;
   font-weight: 600;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .payment-form-container {
   flex: 0.7 1 0;
   min-width: 320px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .confirm-and-pay-div { 
+    flex-direction: column;
+  }
+  .confirm-and-pay-h1 {
+    display: none;
+  }
+  .payment-form-container { 
+    min-width: 280px;
+    order: 1;
+  }
 }
