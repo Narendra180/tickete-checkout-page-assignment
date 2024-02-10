@@ -28,7 +28,7 @@ function PaymentForm() {
 
   const handleSubmit = useCallback((values: any) => {
     console.log(values);
-  }, [form])
+  }, [])
 
   return (
     <div 

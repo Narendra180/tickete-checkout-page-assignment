@@ -11,7 +11,7 @@ function EnterYourDetails({ mantineFormObj }: EnterYourDetailsProps) {
     <div className={styles["enter-your-details-div"]}>
       <div className={styles["header"]}>
         <h2>Enter your Details</h2>
-        <p>We'll be sending your tickets to the details below. Booking for a friend? Add their details.</p>
+        <p>We&apos;ll be sending your tickets to the details below. Booking for a friend? Add their details.</p>
       </div>
       <div className={styles["form-elements-container"]}>
         <TextInput 

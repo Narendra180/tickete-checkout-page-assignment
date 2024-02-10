@@ -48,7 +48,7 @@ function BookingInfo() {
           <p
             className={styles["rating-and-category-p"]}
           >
-            <Image className={styles["star-icon"]} src={"/booking-info/rating-star.svg"} />
+            <Image className={styles["star-icon"]} src={"/booking-info/rating-star.svg"} alt="star icon" />
             <span className={styles["rating"]}>4.9(4.5k)</span>
             <span className={styles["dot"]}></span>
             <span>Category</span>
@@ -133,7 +133,7 @@ function BookingInfo() {
                 <Link
                   href={"/terms-of-usage"}
                 >
-                  Tickete's general terms and conditions
+                  Tickete&apos;s general terms and conditions
                 </Link>
               }
               {" "} and {" "}

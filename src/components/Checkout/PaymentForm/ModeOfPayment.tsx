@@ -83,7 +83,7 @@ function ModeOfPayment({ mantineFormObj }: ModeOfPaymentProps) {
             <Link 
               href={"/terms-of-usage"}
             > 
-              Tickete's general terms and conditions 
+              Tickete&apos;s general terms and conditions 
             </Link>
           } 
           {" "} and {" "}

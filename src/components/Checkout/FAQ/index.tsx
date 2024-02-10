@@ -29,7 +29,7 @@ function FAQ() {
           <div className={styles["text-and-chat-btn-container"]}>
             <div className={styles["text-container"]}>
               <p>Still need help?</p>
-              <p>We're here for you.</p>
+              <p>We&apos;re here for you.</p>
             </div>
             <Button className={styles["chat-with-us-btn"]}>
               Chat with Us
