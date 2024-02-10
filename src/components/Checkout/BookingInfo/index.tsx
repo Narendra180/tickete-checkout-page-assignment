@@ -13,7 +13,7 @@ function BookingInfo() {
           <Carousel
             className={styles["images-carousel"]}
             withIndicators
-            height={200}
+            height={210}
             loop
           >
             <Carousel.Slide>
@@ -40,7 +40,7 @@ function BookingInfo() {
           </Carousel>
 
           <Badge className={styles["best-seller-badge"]} leftSection={<PiTrophyFill />}>
-            Best Seller
+            Bestseller
           </Badge>
         </div>
 

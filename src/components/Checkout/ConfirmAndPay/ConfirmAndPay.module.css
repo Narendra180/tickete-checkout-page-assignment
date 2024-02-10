@@ -27,7 +27,7 @@
     display: none;
   }
   .payment-form-container { 
-    min-width: 280px;
+    min-width: 250px;
     order: 1;
   }
 }

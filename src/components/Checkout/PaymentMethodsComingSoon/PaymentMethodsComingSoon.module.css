@@ -1,0 +1,31 @@
+.payment-methods-coming-soon-banners-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.coming-soon-banner {
+  padding: 0.625rem 1rem;
+  border: 1px solid var(--mantine-color-gray-4);
+  border-radius: 1rem;
+}
+
+.badge-and-coming-soon-text-container {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-weight: 600;
+}
+
+.badge-and-coming-soon-text-container p { 
+  color: var(--mantine-color-gray-6);
+}
+
+.badge-and-coming-soon-text-container :global(.mantine-Badge-root) {
+  height: auto;
+  padding: 0.15625rem 0.3125rem;
+  border-radius: 0.3125rem;
+  background-color: var(--mantine-color-gray-4);
+  color: var(--mantine-color-gray-6);
+}
+

@@ -5,8 +5,10 @@ function TotalPayable() {
   return (
     <div className={styles["total-payable-div"]}>
       <h1>Total Payable: $XXX</h1>
-      <div>
-        <PiInfoFill />
+      <div className={styles["info-banner"]}>
+        <div className={styles["info-icon-container"]}>
+          <PiInfoFill />
+        </div>
         <div>
           <p>
             You will be charged in AED

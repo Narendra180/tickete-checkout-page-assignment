@@ -51,6 +51,12 @@
   position: absolute;
   top: 0.875rem;
   left: 0.875rem;
+  height: auto;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem;
+  text-transform: none;
+  background-color: white;
+  color: var(--text-grey-primary);
 }
 
 .booked-place-rating-and-name-container {
@@ -119,7 +125,7 @@
 .view-payment-summary-div {
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   /* border-bottom: 1px solid var(--mantine-color-gray-4); */
   position: relative;
 }
@@ -171,9 +177,20 @@
   text-decoration: underline;
 }
 
+.you-will-be-charged-text span:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
 .terms-cancellation-policy-links-p {
   font-size: 0.875rem;
   margin-bottom: 1rem;
+}
+
+.terms-cancellation-policy-links-p a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  color: blue;
 }
 
 .confirm-and-pay-btn {
@@ -189,7 +206,7 @@
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .booking-info-wrapper {
-    min-width: 280px;
+    min-width: 250px;
   }
   .booking-info-container {
     padding-bottom: 0;
